@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>charts</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Diogo Antunes">
+	<!-- Date: 2010-11-04 -->
+	<script type="text/javascript" src="raphael.js"></script>
+	<script type="text/javascript" src="g.raphael.js"></script>
+	<script type="text/javascript" src="g.bar.js"></script>
+	<script type="text/javascript" src="g.dot.js"></script>
+	<script type="text/javascript" src="g.line.js"></script>
+	<script type="text/javascript" src="g.pie.js"></script>
+</head>
+<body>
+    
+<script type="text/javascript">
+    // Creates canvas 640 × 480 at 10, 50
+    var r = Raphael(10, 50, 800, 600);
+    // Creates pie chart at with center at 320, 200,
+    // radius 100 and data: [55, 20, 13, 32, 5, 1, 2]
+    r.g.piechart(150, 150, 100, [55, 20, 13, 32, 5, 1, 2]);
+    r.g.barchart(20, 300, 360, 220, [[55, 20, 13, 32, 5, 1, 2]]);
+    r.g.linechart(500, 10, 360, 220, [0, 1, 2, 3, 4, 5, 6], [55, 20, 13, 32, 5, 1, 2]);
+    r.g.dotchart(500, 300, 360, 220, [0, 1, 2, 3, 4, 5, 6], [55, 20, 13, 32, 5, 1, 2], [1, 1, 1, 1, 1, 1, 1], {max: 3});
+</script>
+
+</body>
+</html>
